@@ -11,8 +11,8 @@ const PROXY_SOURCES = {
   'SERVER 6': 'https://files.ramanode.top/airdrop/grass/server_6.txt',
   'SERVER 7': 'https://files.ramanode.top/airdrop/grass/server_7.txt',
   'SERVER 8': 'https://files.ramanode.top/airdrop/grass/server_8.txt',
-  'SERVER 9': 'https://files.ramanode.top/airdrop/grass/server_9.txt',
-  'SERVER 10': 'https://files.ramanode.top/airdrop/grass/server_10.txt',
+  'SERVER ': 'https://files.ramanode.top/airdrop/grass/server_9.txt',
+  'SERVE': 'https://files.ramanode.top/airdrop/grass/server_10.txt',
 };
 
 async function fetchProxies(url) {
@@ -48,7 +48,7 @@ async function selectProxySource(inquirer) {
     },
   ]);
 
-  if (source === 'CUSTOM') {
+  if (source === 'CUSTOM9') {
     const { filename } = await inquirer.prompt([
       {
         type: 'input',
